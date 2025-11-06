@@ -1,7 +1,12 @@
-**Assignment: Reorganize Jupyter Notebook & Build Multi-Target Prediction Models**
+**Assignment: Build Multi-Target Prediction Models**
 
 **Task Overview:**
-Clean up the attached Jupyter script by keeping only the essential cells needed to complete the following challenge.
+In this assignment, each client_id corresponds to a single row that contains both feature values and target labels.
+
+There are multiple target columns, each representing a different prediction task. All targets are binary, but not every target is available for every client. In other words, a client is only labeled for a given target when we explicitly have a 0 or 1 for that column; otherwise, the value is missing and should be treated as “unlabeled.”
+You can recognize the target columns by their naming convention: they all end with "_tgt" (for example, high_ltv_tgt).
+
+All remaining columns—everything except client_id and the target columns—should be treated as features. These features are shared across all prediction tasks.
 
 **Dataset Structure:**
 - Each row represents one client (identified by `client_id`)
