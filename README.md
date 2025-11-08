@@ -1,2 +1,2 @@
 # data-science-challenges
-This repository contains a collection of data science-related coding challenges and assignments.
+This repository contains a selection of data science-related coding challenges and assignments.
